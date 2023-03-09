@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapSched.views.Schedule">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="add"
+                     Clicked="AddButton_Clicked">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <CollectionView x:Name="collectionView"
+                    Margin="20"
+                    SelectionMode="Single"
+                    SelectionChanged="OnSelectionChanged">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical"
+                               ItemSpacing="10"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame CornerRadius="5"
+                       BorderColor="Blue"
+                       Padding="20">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding start_time}"
+                               FontSize="Default"
+                               HorizontalOptions="Start"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest ="45"/>
+                        <BoxView Color="Black" WidthRequest ="1" Opacity="0.3"/>
+                        <Label Text="{Binding title}"
+                               TextColor="Black"
+                               FontSize="Default"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"/>
+                        <BoxView Color="Black" WidthRequest ="1" Opacity="0.3"/>
+                        <Label Text="{Binding building}"
+                               FontSize="Default"
+                               HorizontalOptions="End"
+                               VerticalOptions="CenterAndExpand"
+                               WidthRequest ="15"/>
+                    </StackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

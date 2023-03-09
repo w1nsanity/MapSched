@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapSched.views.PeriodAddingPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Frame CornerRadius="5"
+                   BorderColor="Blue"
+                   Padding="20">
+                <StackLayout Orientation="Horizontal">
+                    <Picker
+                        x:Name="time_picker"
+                        SelectedIndex="{Binding start_time}"
+                        HorizontalOptions="Start"
+                        Title="time"
+                        WidthRequest="55">
+                        <Picker.Items>
+                            <x:String>8:00</x:String>
+                            <x:String>9:40</x:String>
+                            <x:String>11:20</x:String>
+                            <x:String>13:00</x:String>
+                            <x:String>14:40</x:String>
+                            <x:String>16:20</x:String>
+                            <x:String>18:00</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Editor Placeholder="title"
+                            Text="{Binding title}"
+                            HeightRequest="50"
+                            WidthRequest="150"
+                            HorizontalOptions="CenterAndExpand"/>
+                    <Picker
+                        x:Name="building_picker"
+                        SelectedIndex="{Binding building}"
+                        HorizontalOptions="End"
+                        Title="building"
+                        WidthRequest="55">
+                        <Picker.Items>
+                            <x:String>A</x:String>
+                            <x:String>B</x:String>
+                            <x:String>C</x:String>
+                            <x:String>D</x:String>
+                            <x:String>E</x:String>
+                            <x:String>F</x:String>
+                            <x:String>G</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+            </Frame>
+            <StackLayout>
+                <Grid ColumnDefinitions="*,*">
+                    <Button Text="save"
+                        Clicked="OnSaveButton_Clicked"/>
+
+                    <Button Grid.Column="1"
+                        Text="delete"
+                        Clicked="OnDeleteButton_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
