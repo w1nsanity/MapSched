@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vQeWPFWPK87T2Wbu2xKmWoXI6eh2kmPIaPezF46O3w9n8pcr2tRuNT+e7z59tTSSKnbBVdkBRX3bJLg3Fb9V0g==",
+  "dgSpecHash": "j35vDc0KXScCylyTQudUmIFhKk74IHK+ZxPiONesrC1PI37D89IYxIJBqlHPG0cgmJIeB/2ryDo9uHeBSp25KQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\79173\\source\\repos\\MapSched\\MapSched\\MapSched\\MapSched.csproj",
   "expectedPackageFiles": [
@@ -15,8 +15,10 @@
     "C:\\Users\\79173\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\79173\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\79173\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\79173\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
     "C:\\Users\\79173\\.nuget\\packages\\xamarin.essentials\\1.7.5\\xamarin.essentials.1.7.5.nupkg.sha512",
     "C:\\Users\\79173\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512",
+    "C:\\Users\\79173\\.nuget\\packages\\xamarin.forms.googlemaps\\3.3.0\\xamarin.forms.googlemaps.3.3.0.nupkg.sha512",
     "C:\\Users\\79173\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2578\\xamarin.forms.maps.5.0.0.2578.nupkg.sha512"
   ],
   "logs": []
