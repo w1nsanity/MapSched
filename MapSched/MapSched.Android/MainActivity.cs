@@ -21,7 +21,7 @@ namespace MapSched.Droid
             Manifest.Permission.AccessFineLocation,
         };
 
-        protected override void OnStart()
+        protected override async void OnStart()
         {
             base.OnStart();
 
@@ -34,12 +34,12 @@ namespace MapSched.Droid
                 }
                 else
                 {
-                    // some text
+                    //await App.Current.MainPage.DisplayAlert("", "Включите геолокацию и передачу данных, для доступа ко всем функциям приложения", "OK");
                 }
             }
         }
 
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
@@ -54,11 +54,11 @@ namespace MapSched.Droid
             {
                 if ((grantResults.Length == 1) && (grantResults[0] == (int)Permission.Granted))
                 {
-                    // permission granted - display a message
+                    //App.Current.MainPage.DisplayAlert("", "Permission granted", "OK");
                 }
                 else
                 {
-                    // permission denied - display a message
+                    //App.Current.MainPage.DisplayAlert("", "Permission denied", "OK");
                 }
             }
             else

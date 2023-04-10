@@ -4,7 +4,7 @@
              x:Class="MapSched.AppShell"
        xmlns:views="clr-namespace:MapSched.views">
 
-    <TabBar>
+    <TabBar Route="main">
         <ShellContent
             Title="Schedule"
             Icon="icon_schedule.png"

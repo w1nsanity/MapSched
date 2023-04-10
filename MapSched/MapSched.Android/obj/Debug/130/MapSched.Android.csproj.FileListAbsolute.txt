@@ -791,3 +791,4 @@ C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\and
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\stamp\_AndroidXJetifyManifest.stamp
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\androidx\_AndroidXJetifyManifest.jetify
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\stamp\_CopyIntermediateAssemblies.stamp
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\drawable\map_sched_logo.png

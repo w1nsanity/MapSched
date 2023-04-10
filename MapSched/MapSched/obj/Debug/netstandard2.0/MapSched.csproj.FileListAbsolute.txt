@@ -16,3 +16,4 @@ C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\refint\MapSched.dll
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\MapSched.pdb
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\ref\MapSched.dll
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\views\LoginUI.xaml.g.cs

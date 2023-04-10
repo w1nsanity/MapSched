@@ -23,9 +23,16 @@ namespace MapSched.views
 
         public async void ZoomOnCurrentLocation()
         {
-            var locator = CrossGeolocator.Current;
-            var position = await locator.GetLastKnownLocationAsync();
-            map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude), Distance.FromMeters(300)));
+            try
+            {
+                var locator = CrossGeolocator.Current;
+                var position = await locator.GetPositionAsync();
+                map.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(position.Latitude, position.Longitude), Distance.FromMeters(300)));
+            }
+            catch
+            {
+                await App.Current.MainPage.DisplayAlert("", "Включите геолокацию и передачу данных, для доступа ко всем функциям приложения", "OK");
+            }
         }
     }
 }

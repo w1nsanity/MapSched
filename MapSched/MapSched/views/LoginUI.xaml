@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MapSched.views.LoginUI">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Source="map_sched_logo.png" WidthRequest="180" HeightRequest="180"/>
+            <Entry x:Name="txtUsername" Placeholder="Username" PlaceholderColor="Gray"/>
+            <Entry x:Name="txtPassword" Placeholder="Password" IsPassword="True" PlaceholderColor="Gray"/>
+            <Button
+                VerticalOptions="Center"
+                Text="Login"
+                BackgroundColor="Transparent"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="LoginButton_Clicked"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

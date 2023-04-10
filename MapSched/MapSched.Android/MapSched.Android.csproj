@@ -95,7 +95,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\map_sched_logo.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapSched\MapSched.csproj">
       <Project>{BAC72CF8-F829-4E27-81B3-EE91A7562011}</Project>

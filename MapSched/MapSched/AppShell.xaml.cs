@@ -18,6 +18,7 @@ namespace MapSched
             InitializeComponent();
 
             Routing.RegisterRoute(nameof(PeriodAddingPage), typeof(PeriodAddingPage));
+            Routing.RegisterRoute(nameof(LoginUI), typeof(LoginUI));
         }
     }
 }
