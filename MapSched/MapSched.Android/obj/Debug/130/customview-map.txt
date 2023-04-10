@@ -21,6 +21,8 @@ com.google.android.material.bottomnavigation.BottomNavigationView;C:\Users\79173
 com.google.android.material.tabs.TabLayout;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\layout\fallbacktabbardonotuse.xml
 com.google.android.material.tabs.TabLayout;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\layout\rootlayout.xml
 com.google.android.material.tabs.TabLayout;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\layout\tabbar.xml
+crc643f46942d9dd1fff9.ShellFlyoutLayout;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\layout\flyoutcontent.xml
+crc64720bb2db43a66fe9.FormsViewPager;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\layout\rootlayout.xml
 declare-styleable;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\values\attrs.xml
 external-cache-path;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
@@ -28,7 +30,9 @@ foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\130\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\layout\bottomtablayout.xml
 item;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\values\styles.xml
+item;obj\Debug\130\res\layout\activity_main.xml
 LinearLayout;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\layout\bottomtablayout.xml
+menu;obj\Debug\130\res\layout\activity_main.xml
 paths;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\58\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\values\attrs.xml
 resources;C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\lp\61\jl\res\values\strings.xml

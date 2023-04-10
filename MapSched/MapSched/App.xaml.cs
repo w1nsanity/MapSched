@@ -3,6 +3,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using MapSched.data;
 using System.IO;
+using Plugin.Geolocator;
+using Xamarin.Forms.Maps;
+using MapSched.views;
+using Xamarin.Essentials;
 
 namespace MapSched
 {
