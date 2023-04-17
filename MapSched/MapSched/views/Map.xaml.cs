@@ -34,5 +34,7 @@ namespace MapSched.views
                 await App.Current.MainPage.DisplayAlert("", "Включите геолокацию и передачу данных, для доступа ко всем функциям приложения", "OK");
             }
         }
+
+
     }
 }

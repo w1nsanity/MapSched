@@ -70,5 +70,10 @@ namespace MapSched.views
 
             await Shell.Current.GoToAsync("..");
         }
+
+        private async void MoveToMapPage(Object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//MapPage");
+        }
     }
 }

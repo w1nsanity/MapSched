@@ -25,11 +25,11 @@
     <package android:name="com.google.android.apps.maps" />
   </queries>
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
-  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="MapSched.Android" android:theme="@style/MainTheme">
+  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/map_sched_logo" android:label="MapSched.Android" android:theme="@style/MainTheme">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA_NtoeWa1X-KNR9CVgbfPV1c3Y9Uw3yLY" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
-    <activity android:name="crc64d04ac69e1ba5274a.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/icon" android:label="MapSched" android:theme="@style/MainTheme">
+    <activity android:name="crc64d04ac69e1ba5274a.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@drawable/map_sched_logo" android:label="MapSched" android:theme="@style/MainTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

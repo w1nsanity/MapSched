@@ -8,13 +8,15 @@
         <ShellContent
             Title="Schedule"
             Icon="icon_schedule.png"
-            ContentTemplate="{DataTemplate views:Schedule}">
+            ContentTemplate="{DataTemplate views:Schedule}"
+            Route="SchedulePage">
         </ShellContent>
 
         <ShellContent
             Title="Map"
             Icon="icon_map.png"
-            ContentTemplate="{DataTemplate views:Map}">
+            ContentTemplate="{DataTemplate views:Map}"
+            Route="MapPage">
         </ShellContent>
     </TabBar>
 </Shell>

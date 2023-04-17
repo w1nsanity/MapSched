@@ -17,11 +17,11 @@
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.WRITE_FINE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-  <application android:label="MapSched.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true" android:extractNativeLibs="true">
+  <application android:label="MapSched.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/map_sched_logo" android:debuggable="true" android:extractNativeLibs="true">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA_NtoeWa1X-KNR9CVgbfPV1c3Y9Uw3yLY" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
-    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="MapSched" android:theme="@style/MainTheme" android:name="crc64d04ac69e1ba5274a.MainActivity" android:exported="true">
+    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@drawable/map_sched_logo" android:label="MapSched" android:theme="@style/MainTheme" android:name="crc64d04ac69e1ba5274a.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

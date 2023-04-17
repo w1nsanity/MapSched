@@ -57,6 +57,7 @@
                         Clicked="OnDeleteButton_Clicked"/>
                 </Grid>
             </StackLayout>
+            <Button Text="Build route" Clicked="MoveToMapPage"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
