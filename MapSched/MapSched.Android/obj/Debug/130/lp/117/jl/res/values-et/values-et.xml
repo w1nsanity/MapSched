@@ -1,7 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string msgid="3260749812566568062" name="copy_toast_msg">"Link kopeeriti lõikelauale"</string>
-    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopeeri link"</string>
-    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Ava brauseris"</string>
-    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Jaga linki"</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:4bad7cce4353c08beb4cab350d602d4725298fc6f772dfb2be15e2740aa9aafd
+size 470

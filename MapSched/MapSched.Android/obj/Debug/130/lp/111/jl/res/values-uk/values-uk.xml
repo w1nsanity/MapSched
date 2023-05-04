@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Перейти вгору"</string>
-    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Відкрити панель навігації"</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf4cdf7e95812c0e0166185993f10e345e6c19b03eb77d3ca491d748d3c4117f
+size 326

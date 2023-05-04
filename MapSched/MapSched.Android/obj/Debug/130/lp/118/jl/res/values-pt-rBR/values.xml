@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding='utf-8' standalone='no'?>
-<resources>
-<!-- blaze-out/k8-opt/genfiles/java/com/google/android/gmscore/integ/client/common/res/values-pt-rBR/strings.xml -->
-<eat-comment/>
-<string name="common_google_play_services_unknown_issue">O app %1$s está com problemas com o Google Play Services. Tente novamente.</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:387957564d3bfb82538fa7a0e195bc155d558b8c3deac050dfc36e234391e920
+size 353

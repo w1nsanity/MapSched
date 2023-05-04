@@ -1,47 +1,547 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MapSched.views.Schedule">
+             x:Class="MapSched.views.Schedule"
+             BackgroundColor="#1C1C1C"
+             Title="MapSched">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="add"
+        <ToolbarItem Text="+"
                      Clicked="AddButton_Clicked">
         </ToolbarItem>
     </ContentPage.ToolbarItems>
 
-    <CollectionView x:Name="collectionView"
-                    Margin="20"
+    <ScrollView>
+        <StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <SearchBar Placeholder="Найдите пару" TextChanged="SearchBar_TextChanged" x:Name="SearchBar" TextColor="White" PlaceholderColor="Gray" CancelButtonColor="Gray" WidthRequest="290"/>
+                <Picker x:Name="wn_picker"
+                        Title="Неделя"
+                        TextColor="White"
+                        TitleColor="Gray"
+                        WidthRequest="50"
+                        FontSize="12"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="Center"
+                        SelectedIndexChanged="wn_picker_SelectedIndexChanged">
+                    <Picker.Items>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <StackLayout>
+                <CollectionView x:Name="collectionView"
+                    Margin="20, 0, 20, 20"
+                    SelectionMode="Single"
+                    IsVisible="false"
+                    SelectionChanged="OnSelectionChanged">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"
+                               ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+                    
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <SwipeView BackgroundColor="Transparent">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="✕"
+                                                   BackgroundColor="IndianRed"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="⇒"
+                                                   BackgroundColor="LightBlue"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked_1"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding day_of_week}"
+                                            FontSize="Default"
+                                            HorizontalOptions="Start"
+                                            TextColor="White"/>
+                                        <Label Text="{Binding week_number}"
+                                            FontSize="Default"
+                                            TextColor="White"/>
+                                    </StackLayout>
+                                    <StackLayout>
+
+                                        <Frame CornerRadius="5"
+                                                BorderColor="Gray"
+                                                Padding="20, 20, 0, 20"
+                                                BackgroundColor="Transparent">
+
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="{Binding start_time}"
+                                                        FontSize="Default"
+                                                        HorizontalOptions="Start"
+                                                        VerticalOptions="CenterAndExpand"
+                                                        WidthRequest ="45"
+                                                        TextColor="White"/>
+                                                <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                                <Label Text="{Binding title}"
+                                                        TextColor="White"
+                                                        FontSize="Default"
+                                                        FontAttributes="Bold"
+                                                        HorizontalOptions="CenterAndExpand"
+                                                        VerticalOptions="CenterAndExpand"/>
+                                                <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                                <Label Text="{Binding building}"
+                                                        FontSize="Default"
+                                                        Margin="5, 0, 0, 0"
+                                                        HorizontalOptions="End"
+                                                        VerticalOptions="CenterAndExpand"
+                                                        WidthRequest ="25"
+                                                        TextColor="White"/>
+                                            </StackLayout>
+
+                                        </Frame>
+
+                                    </StackLayout>
+                                </StackLayout>
+                                
+                            </SwipeView>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                
+                <Label Text="Понедельник" x:Name="label_mon" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large" Margin="20, 5"></Label>
+                <CollectionView x:Name="collectionView_mon"
+                    Margin="20, 0, 20, 20"
                     SelectionMode="Single"
                     SelectionChanged="OnSelectionChanged">
-        <CollectionView.ItemsLayout>
-            <LinearItemsLayout Orientation="Vertical"
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"
                                ItemSpacing="10"/>
-        </CollectionView.ItemsLayout>
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Frame CornerRadius="5"
-                       BorderColor="Blue"
-                       Padding="20">
-                    <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding start_time}"
-                               FontSize="Default"
-                               HorizontalOptions="Start"
-                               VerticalOptions="CenterAndExpand"
-                               WidthRequest ="45"/>
-                        <BoxView Color="Black" WidthRequest ="1" Opacity="0.3"/>
-                        <Label Text="{Binding title}"
-                               TextColor="Black"
-                               FontSize="Default"
-                               HorizontalOptions="CenterAndExpand"
-                               VerticalOptions="CenterAndExpand"/>
-                        <BoxView Color="Black" WidthRequest ="1" Opacity="0.3"/>
-                        <Label Text="{Binding building}"
-                               FontSize="Default"
-                               HorizontalOptions="End"
-                               VerticalOptions="CenterAndExpand"
-                               WidthRequest ="15"/>
-                    </StackLayout>
-                </Frame>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            
+                            <SwipeView BackgroundColor="Transparent">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="✕"
+                                                   BackgroundColor="IndianRed"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="⇒"
+                                                   BackgroundColor="LightBlue"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked_1"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <StackLayout>
+
+                                    <Frame CornerRadius="5"
+                                    BorderColor="Gray"
+                                    Padding="20, 20, 0, 20"
+                                    BackgroundColor="Transparent">
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding start_time}"
+                                            FontSize="Default"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="45"
+                                            TextColor="White"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding title}"
+                                            TextColor="White"
+                                            FontSize="Default"
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="CenterAndExpand"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding building}"
+                                            Margin="5, 0, 0, 0"
+                                            FontSize="Default"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="25"
+                                            TextColor="White"/>
+                                        </StackLayout>
+
+                                    </Frame>
+
+                                </StackLayout>
+                            </SwipeView>
+                            
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Label Text="Вторник" x:Name="label_tue" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large" Margin="20, 5"></Label>
+                <CollectionView x:Name="collectionView_tue"
+                    Margin="20, 0, 20, 20"
+                    SelectionMode="Single"
+                    SelectionChanged="OnSelectionChanged">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"
+                               ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView BackgroundColor="Transparent">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="✕"
+                                                   BackgroundColor="IndianRed"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="⇒"
+                                                   BackgroundColor="LightBlue"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked_1"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <StackLayout>
+
+                                    <Frame CornerRadius="5"
+                                    BorderColor="Gray"
+                                    Padding="20, 20, 0, 20"
+                                    BackgroundColor="Transparent">
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding start_time}"
+                                            FontSize="Default"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="45"
+                                            TextColor="White"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding title}"
+                                            TextColor="White"
+                                            FontSize="Default"
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="CenterAndExpand"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding building}"
+                                            Margin="5, 0, 0, 0"
+                                            FontSize="Default"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="25"
+                                            TextColor="White"/>
+                                        </StackLayout>
+
+                                    </Frame>
+
+                                </StackLayout>
+                            </SwipeView>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Label Text="Среда" x:Name="label_wed" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large" Margin="20, 5"></Label>
+                <CollectionView x:Name="collectionView_wed"
+                    Margin="20, 0, 20, 20"
+                    SelectionMode="Single"
+                    SelectionChanged="OnSelectionChanged">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"
+                               ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView BackgroundColor="Transparent">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="✕"
+                                                   BackgroundColor="IndianRed"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="⇒"
+                                                   BackgroundColor="LightBlue"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked_1"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <StackLayout>
+
+                                    <Frame CornerRadius="5"
+                                    BorderColor="Gray"
+                                    Padding="20, 20, 0, 20"
+                                    BackgroundColor="Transparent">
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding start_time}"
+                                            FontSize="Default"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="45"
+                                            TextColor="White"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding title}"
+                                            TextColor="White"
+                                            FontSize="Default"
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="CenterAndExpand"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding building}"
+                                                   Margin="5, 0, 0, 0"
+                                            FontSize="Default"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="25"
+                                            TextColor="White"/>
+                                        </StackLayout>
+
+                                    </Frame>
+
+                                </StackLayout>
+                            </SwipeView>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Label Text="Четверг" x:Name="label_thu" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large" Margin="20, 5"></Label>
+                <CollectionView x:Name="collectionView_thu"
+                    Margin="20, 0, 20, 20"
+                    SelectionMode="Single"
+                    SelectionChanged="OnSelectionChanged">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"
+                               ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView BackgroundColor="Transparent">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="✕"
+                                                   BackgroundColor="IndianRed"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="⇒"
+                                                   BackgroundColor="LightBlue"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked_1"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <StackLayout>
+
+                                    <Frame CornerRadius="5"
+                                    BorderColor="Gray"
+                                    Padding="20, 20, 0, 20"
+                                    BackgroundColor="Transparent">
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding start_time}"
+                                            FontSize="Default"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="45"
+                                            TextColor="White"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding title}"
+                                            TextColor="White"
+                                            FontSize="Default"
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="CenterAndExpand"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding building}"
+                                                   Margin="5, 0, 0, 0"
+                                            FontSize="Default"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="25"
+                                            TextColor="White"/>
+                                        </StackLayout>
+
+                                    </Frame>
+
+                                </StackLayout>
+                            </SwipeView>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Label Text="Пятница" x:Name="label_fri" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large" Margin="20, 5"></Label>
+                <CollectionView x:Name="collectionView_fri"
+                    Margin="20, 0, 20, 20"
+                    SelectionMode="Single"
+                    SelectionChanged="OnSelectionChanged">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"
+                               ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView BackgroundColor="Transparent">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="✕"
+                                                   BackgroundColor="IndianRed"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="⇒"
+                                                   BackgroundColor="LightBlue"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked_1"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <StackLayout>
+
+                                    <Frame CornerRadius="5"
+                                    BorderColor="Gray"
+                                    Padding="20, 20, 0, 20"
+                                    BackgroundColor="Transparent">
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding start_time}"
+                                            FontSize="Default"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="45"
+                                            TextColor="White"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding title}"
+                                            TextColor="White"
+                                            FontSize="Default"
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="CenterAndExpand"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding building}"
+                                                   Margin="5, 0, 0, 0"
+                                            FontSize="Default"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="25"
+                                            TextColor="White"/>
+                                        </StackLayout>
+
+                                    </Frame>
+
+                                </StackLayout>
+                            </SwipeView>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Label Text="Суббота" x:Name="label_sat" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large" Margin="20, 5"></Label>
+                <CollectionView x:Name="collectionView_sat"
+                    Margin="20, 0, 20, 20"
+                    SelectionMode="Single"
+                    SelectionChanged="OnSelectionChanged">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"
+                               ItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView BackgroundColor="Transparent">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="✕"
+                                                   BackgroundColor="IndianRed"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="⇒"
+                                                   BackgroundColor="LightBlue"
+                                                   CommandParameter="{Binding .}"
+                                                   Invoked="SwipeItem_Invoked_1"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <StackLayout>
+
+                                    <Frame CornerRadius="5"
+                                    BorderColor="Gray"
+                                    Padding="20, 20, 0, 20"
+                                    BackgroundColor="Transparent">
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding start_time}"
+                                            FontSize="Default"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="45"
+                                            TextColor="White"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding title}"
+                                            TextColor="White"
+                                            FontSize="Default"
+                                            FontAttributes="Bold"
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="CenterAndExpand"/>
+                                            <BoxView Color="Gray" WidthRequest ="1" Opacity="0.3"/>
+                                            <Label Text="{Binding building}"
+                                                   Margin="5, 0, 0, 0"
+                                            FontSize="Default"
+                                            HorizontalOptions="End"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest ="25"
+                                            TextColor="White"/>
+                                        </StackLayout>
+
+                                    </Frame>
+
+                                </StackLayout>
+                            </SwipeView>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+    
+    
 </ContentPage>

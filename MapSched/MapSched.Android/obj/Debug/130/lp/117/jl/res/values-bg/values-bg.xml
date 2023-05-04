@@ -1,7 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string msgid="3260749812566568062" name="copy_toast_msg">"Връзката е копирана в буферната памет"</string>
-    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Копиране на връзката"</string>
-    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Отваряне в браузър"</string>
-    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Споделяне на връзката"</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ecfea6b08418a8b9bd7899554085eced6ec9e1a62ecf9cf3b4490dcfc31f0fd
+size 589

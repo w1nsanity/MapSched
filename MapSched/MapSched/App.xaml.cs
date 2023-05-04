@@ -30,23 +30,23 @@ namespace MapSched
 
         public App()
         {
-            InitializeComponent();
-
             //MainPage = new AppShell();
             //MainPage = new NavigationPage(new LoginUI());
+            MainPage = new NavigationPage(new SplashPage());
+            //MainPage = new AppShell();
 
             InitializeComponent();
 
             //DependencyService.Register<MockDataStore>();
-            var isLoogged = Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result;
-            if (isLoogged == "1")
-            {
-                MainPage = new AppShell();
-            }
-            else
-            {
-                MainPage = new LoginUI();
-            }
+            //var isLoogged = Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result;
+            //if (isLoogged == "1")
+            //{
+            //    MainPage = new AppShell();
+            //}
+            //else
+            //{
+            //    MainPage = new LoginUI();
+            //}
         }
 
         protected override void OnStart()

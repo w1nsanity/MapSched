@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" parent="android:TextAppearance.Material.Widget.Button.Borderless.Colored"/>
-    <style name="Base.TextAppearance.AppCompat.Widget.Button.Colored" parent="android:TextAppearance.Material.Widget.Button.Colored"/>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:5a7385456339004068cb489069ff7ce713c0bd0021f1e09e6ffe5a3a2bf0a7d9
+size 355

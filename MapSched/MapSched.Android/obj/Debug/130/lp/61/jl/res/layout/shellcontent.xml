@@ -1,1 +1,3 @@
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"><com.google.android.material.appbar.AppBarLayout android:id="@+id/shellcontent.appbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"><androidx.appcompat.widget.Toolbar android:id="@+id/shellcontent.toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" /></com.google.android.material.appbar.AppBarLayout></androidx.coordinatorlayout.widget.CoordinatorLayout>
+version https://git-lfs.github.com/spec/v1
+oid sha256:e48244375aa7fc8efede01b99064ee6b1f054675ff14f22c6314ff033a272c19
+size 771

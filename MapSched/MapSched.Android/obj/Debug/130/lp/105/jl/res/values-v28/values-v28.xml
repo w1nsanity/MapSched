@@ -1,11 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item format="float" name="mtrl_high_ripple_default_alpha" type="dimen">0.24</item>
-    <item format="float" name="mtrl_high_ripple_focused_alpha" type="dimen">0.40</item>
-    <item format="float" name="mtrl_high_ripple_hovered_alpha" type="dimen">0.40</item>
-    <item format="float" name="mtrl_high_ripple_pressed_alpha" type="dimen">0.24</item>
-    <item format="float" name="mtrl_low_ripple_default_alpha" type="dimen">0.12</item>
-    <item format="float" name="mtrl_low_ripple_focused_alpha" type="dimen">0.20</item>
-    <item format="float" name="mtrl_low_ripple_hovered_alpha" type="dimen">0.20</item>
-    <item format="float" name="mtrl_low_ripple_pressed_alpha" type="dimen">0.12</item>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:86fb6ab5d4a9329766c3bbcb4a002a05172d9b30eef4e46de978fa14472593db
+size 763

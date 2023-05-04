@@ -1,7 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string msgid="3260749812566568062" name="copy_toast_msg">"คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว"</string>
-    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"คัดลอกลิงก์"</string>
-    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"เปิดในเบราว์เซอร์"</string>
-    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"แชร์ลิงก์"</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:461719d168284fd730781a6b28b73ad88484658d05a521edc4d81701a4f76b61
+size 606

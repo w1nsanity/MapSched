@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding='utf-8' standalone='no'?>
-<resources>
-<!-- blaze-out/k8-opt/genfiles/java/com/google/android/gmscore/integ/client/common/res/values-uz/strings.xml -->
-<eat-comment/>
-<string name="common_google_play_services_unknown_issue">%1$s ilovasini Google Play xizmatlariga ulab bo‘lmadi. Qaytadan urinib ko‘ring.</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:32fb903a89c31d7334df24039a7322185f25be29215a47b456530bf1c9c92ca6
+size 357

@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding='utf-8' standalone='no'?>
-<resources>
-<!-- blaze-out/k8-opt/genfiles/java/com/google/android/gmscore/integ/client/common/res/values-uk/strings.xml -->
-<eat-comment/>
-<string name="common_google_play_services_unknown_issue">У додатку %1$s виникла проблема із сервісами Google Play. Повторіть спробу.</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:28c5c752d7a93a3c99a96eddd6de6c28fa6626772db980cf636179cdf0916585
+size 398

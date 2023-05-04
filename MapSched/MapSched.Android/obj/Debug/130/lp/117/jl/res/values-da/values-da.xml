@@ -1,7 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string msgid="3260749812566568062" name="copy_toast_msg">"Linket er kopieret til udklipsholderen"</string>
-    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopiér link"</string>
-    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Åbn i browser"</string>
-    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Del link"</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:ddd35377a57da6b88b9bf92871b0d032159c246fe93a18b1543145a224bb2e07
+size 480

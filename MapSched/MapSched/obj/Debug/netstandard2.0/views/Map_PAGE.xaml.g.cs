@@ -8,20 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MapSched.views.Map.xaml", "views/Map.xaml", typeof(global::MapSched.views.Map))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MapSched.views.Map_PAGE.xaml", "views/Map_PAGE.xaml", typeof(global::MapSched.views.Map_PAGE))]
 
 namespace MapSched.views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\Map.xaml")]
-    public partial class Map : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\Map_PAGE.xaml")]
+    public partial class Map_PAGE : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Maps.Map map;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Map));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Map_PAGE));
             map = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Maps.Map>(this, "map");
         }
     }

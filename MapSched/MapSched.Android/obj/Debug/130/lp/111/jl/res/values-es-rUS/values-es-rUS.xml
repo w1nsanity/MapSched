@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Navegar hacia arriba"</string>
-    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Abrir panel lateral de navegación"</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:cfcc3c81d1a66003c3b8df7d08580f615d8d816655e5946ba608706b9dbd42f4
+size 307

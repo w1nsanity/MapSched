@@ -1,63 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MapSched.views.PeriodAddingPage">
+             x:Class="MapSched.views.PeriodAddingPage" BackgroundColor="#1C1C1C"
+             Title="Добавляйте/редактируйте">
     <ContentPage.Content>
-        <StackLayout Margin="10">
+        <StackLayout Margin="10" BackgroundColor="Transparent">
             <Frame CornerRadius="5"
-                   BorderColor="Blue"
-                   Padding="20">
-                <StackLayout Orientation="Horizontal">
-                    <Picker
-                        x:Name="time_picker"
-                        SelectedIndex="{Binding start_time}"
-                        HorizontalOptions="Start"
-                        Title="time"
-                        WidthRequest="55">
-                        <Picker.Items>
-                            <x:String>8:00</x:String>
-                            <x:String>9:40</x:String>
-                            <x:String>11:20</x:String>
-                            <x:String>13:00</x:String>
-                            <x:String>14:40</x:String>
-                            <x:String>16:20</x:String>
-                            <x:String>18:00</x:String>
-                        </Picker.Items>
-                    </Picker>
-                    <Editor Placeholder="title"
-                            Text="{Binding title}"
-                            HeightRequest="50"
-                            WidthRequest="150"
-                            HorizontalOptions="CenterAndExpand"/>
-                    <Picker
-                        x:Name="building_picker"
-                        SelectedIndex="{Binding building}"
-                        HorizontalOptions="End"
-                        Title="building"
-                        WidthRequest="55">
-                        <Picker.Items>
-                            <x:String>A</x:String>
-                            <x:String>B</x:String>
-                            <x:String>C</x:String>
-                            <x:String>D</x:String>
-                            <x:String>E</x:String>
-                            <x:String>F</x:String>
-                            <x:String>G</x:String>
-                        </Picker.Items>
-                    </Picker>
+                   BorderColor="LightGray"
+                   Padding="20" BackgroundColor="Transparent">
+                <StackLayout BackgroundColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                        <Picker
+                            x:Name="time_picker"
+                            SelectedItem="{Binding start_time}"
+                            SelectedIndex="{Binding start_time}"
+                            HorizontalOptions="Start"
+                            Title="Время"
+                            WidthRequest="55"
+                            TextColor="White"
+                            TitleColor="Gray"
+                            FontSize="12"
+                            HorizontalTextAlignment="Center">
+                            <Picker.Items>
+                                <x:String>08:00</x:String>
+                                <x:String>09:40</x:String>
+                                <x:String>11:20</x:String>
+                                <x:String>13:00</x:String>
+                                <x:String>14:40</x:String>
+                                <x:String>16:20</x:String>
+                                <x:String>18:00</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Editor Placeholder="Название"
+                                PlaceholderColor="Gray"
+                                Text="{Binding title}"
+                                HeightRequest="50"
+                                WidthRequest="150"
+                                HorizontalOptions="FillAndExpand"
+                                TextColor="White"/>
+                        <Picker
+                            x:Name="building_picker"
+                            SelectedIndex="{Binding building}"
+                            SelectedItem="{Binding building}"
+                            HorizontalOptions="End"
+                            Title="Корпус"
+                            FontSize="12"
+                            TitleColor="Gray"
+                            WidthRequest="55"
+                            TextColor="White"
+                            HorizontalTextAlignment="Center">
+                            <Picker.Items>
+                                <x:String>А</x:String>
+                                <x:String>Б</x:String>
+                                <x:String>В</x:String>
+                                <x:String>Г</x:String>
+                                <x:String>Д</x:String>
+                                <x:String>Е</x:String>
+                                <x:String>И</x:String>
+                                <x:String>К</x:String>
+                                <x:String>Л</x:String>
+                                <x:String>М</x:String>
+                                <x:String>О</x:String>
+                                <x:String>Т</x:String>
+                                <x:String>У</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Picker
+                            x:Name="weeknumber_picker"
+                            SelectedIndex="{Binding week_number}"
+                            SelectedItem="{Binding week_number}"
+                            Title="Неделя"
+                            TextColor="White"
+                            TitleColor="Gray"
+                            WidthRequest="55"
+                            FontSize="12"
+                            HorizontalTextAlignment="Center">
+                            <Picker.Items>
+                                <x:String>1</x:String>
+                                <x:String>2</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Picker
+                            x:Name="dayofweek_picker"
+                            SelectedIndex="{Binding day_of_week}"
+                            SelectedItem="{Binding day_of_week}"
+                            Title="День недели"
+                            TextColor="White"
+                            TitleColor="Gray"
+                            WidthRequest="240"
+                            FontSize="12"
+                            HorizontalTextAlignment="Center">
+                            <Picker.Items>
+                                <x:String>Понедельник</x:String>
+                                <x:String>Вторник</x:String>
+                                <x:String>Среда</x:String>
+                                <x:String>Четверг</x:String>
+                                <x:String>Пятница</x:String>
+                                <x:String>Суббота</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
                 </StackLayout>
             </Frame>
             <StackLayout>
-                <Grid ColumnDefinitions="*,*">
-                    <Button Text="save"
-                        Clicked="OnSaveButton_Clicked"/>
 
-                    <Button Grid.Column="1"
-                        Text="delete"
-                        Clicked="OnDeleteButton_Clicked"/>
-                </Grid>
+                <Button Text="Сохранить"
+                    Clicked="OnSaveButton_Clicked" BackgroundColor="Transparent" BorderWidth=".5" BorderColor="Gray" TextColor="White"/>
+                
             </StackLayout>
-            <Button Text="Build route" Clicked="MoveToMapPage"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

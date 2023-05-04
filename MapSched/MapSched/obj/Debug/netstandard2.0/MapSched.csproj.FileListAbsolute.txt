@@ -5,7 +5,6 @@ C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\MapSched.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
-C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\views\Map.xaml.g.cs
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\views\PeriodAddingPage.xaml.g.cs
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\views\Schedule.xaml.g.cs
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\MapSched.AssemblyInfoInputs.cache
@@ -17,3 +16,8 @@ C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\MapSched.pdb
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\ref\MapSched.dll
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\views\LoginUI.xaml.g.cs
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\views\Map_PAGE.xaml.g.cs
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched\obj\Debug\netstandard2.0\MapSched.csproj.CopyComplete

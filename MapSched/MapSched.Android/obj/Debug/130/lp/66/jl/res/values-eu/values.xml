@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding='utf-8' standalone='no'?>
-<resources>
-<!-- blaze-out/k8-opt/genfiles/java/com/google/android/gmscore/integ/client/common/res/values-eu/strings.xml -->
-<eat-comment/>
-<string name="common_google_play_services_unknown_issue">%1$s aplikazioak arazoak ditu Google Play Services-ekin. Saiatu berriro.</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1e474182cfb49d24749f2ae3885ebdd9d8119676b93805f9b6105300da2e914
+size 346

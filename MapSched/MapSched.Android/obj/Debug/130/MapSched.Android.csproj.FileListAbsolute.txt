@@ -56,8 +56,6 @@ C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\mipmap-xxhdpi\launcher_foreground.png
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\mipmap-xxxhdpi\icon.png
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\mipmap-xxxhdpi\launcher_foreground.png
-C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\drawable\icon_map.png
-C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\drawable\icon_schedule.png
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\uploadflags.txt
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\resolvedassemblies.hash
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\android\assets\FormsViewGroup.dll
@@ -792,3 +790,7 @@ C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\sta
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\androidx\_AndroidXJetifyManifest.jetify
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\stamp\_CopyIntermediateAssemblies.stamp
 C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\drawable\map_sched_logo.png
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\drawable\map_sched_desktop_logo.png
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\drawable\map_sched_logo_desktop_test.png
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\drawable\icon_schedule_white.png
+C:\Users\79173\source\repos\MapSched\MapSched\MapSched.Android\obj\Debug\130\res\drawable\icon_map_white.png

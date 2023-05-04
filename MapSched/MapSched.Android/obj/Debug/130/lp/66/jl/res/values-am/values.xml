@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding='utf-8' standalone='no'?>
-<resources>
-<!-- blaze-out/k8-opt/genfiles/java/com/google/android/gmscore/integ/client/common/res/values-am/strings.xml -->
-<eat-comment/>
-<string name="common_google_play_services_unknown_issue">%1$s በGoogle Play አገልግሎቶች ላይ ችግሮች እያጋጠሙት ነው። እባክዎ እንደገና ይሞክሩ።</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f5843c60051e414aefa7962f385a7596fddd88170f4fae6396ba1c2a7cc3b74e
+size 409

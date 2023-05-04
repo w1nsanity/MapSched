@@ -1,7 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string msgid="3260749812566568062" name="copy_toast_msg">"Pautan disalin ke papan keratan"</string>
-    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Salin pautan"</string>
-    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Buka dalam penyemak imbas"</string>
-    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Kongsi pautan"</string>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:df2dfbe7724bd04c1ea45b9208bac31a6cd7892ed10a422c0b8a629d9be47d01
+size 489

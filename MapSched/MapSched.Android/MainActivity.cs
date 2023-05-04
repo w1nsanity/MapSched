@@ -7,10 +7,12 @@ using Android;
 using Xamarin.Essentials;
 using Plugin.CurrentActivity;
 using MapSched.views;
+using Android.Gms.Maps.Model;
+using Android.Gms.Maps;
 
 namespace MapSched.Droid
 {
-    [Activity(Label = "MapSched", Icon = "@drawable/map_sched_logo", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
+    [Activity(Label = "MapSched", Icon = "@drawable/map_sched_logo_desktop_test", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         const int RequestLocationId = 0;

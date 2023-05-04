@@ -1,1 +1,3 @@
-<set android:shareInterpolator="false" xmlns:android="http://schemas.android.com/apk/res/android"><alpha android:duration="250" android:fromAlpha="0.6" android:toAlpha="1" /><translate android:fromXDelta="-50%" android:toXDelta="0%" android:duration="250" /></set>
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd19a85b2a30e2b769a65436168034eaf839ace00dc58be9524b85488a049403
+size 264
